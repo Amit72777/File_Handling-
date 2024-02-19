@@ -1,11 +1,13 @@
 
 
-f = open("file1.txt",'r')
-f2 = open("file2.txt",'a')
+f = open("file1.txt",'r')  # open a file  in read mode 
+f2 = open("file2.txt",'a')  # open a file in append mode 
 
 for line in f.readlines():
     a,b =line.split(",")
     f2.write(f" {a}'s salary is {b}")
+
+f.close() # close file 
 
 # file1 content 
 '''
